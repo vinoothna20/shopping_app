@@ -1,0 +1,143 @@
+body,
+.fixed-top {
+  background-color: #0f111d;
+}
+
+nav > ul > a {
+  cursor: pointer;
+}
+
+/* categories block */
+.category-card {
+  display: none;
+}
+
+.category-link:hover .category-card {
+  position: absolute;
+  display: block;
+  top: 70px;
+}
+
+/* search box */
+.input-box {
+  position: relative;
+  height: 36px;
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 115px 0 22px;
+  background-color: transparent;
+}
+
+.input-box .button {
+  right: 2px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 5px 13px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+/* product cards */
+.card {
+  max-width: 900px;
+}
+
+/* product rating box */
+.rating {
+  background-color: rgb(43 155 43);
+  border-radius: 4px;
+  color: white;
+  padding: 0 5px;
+}
+
+.star {
+  font-size: 13px;
+}
+
+/* cart count  */
+#itemsCount {
+  position: absolute;
+  right: 7px;
+  bottom: 32px;
+  text-align: center;
+  border-radius: 8px;
+  width: 18px;
+  height: 18px;
+  background-color: #f26046;
+  border: 1px solid #fff;
+  color: #f0f0f0;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .navbar-nav {
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .category-link:hover .category-card {
+    position: absolute;
+    display: block;
+    top: 76px;
+    left: 145px;
+  }
+
+  .category-link:hover .category-card li {
+    font-size: 16px;
+  }
+
+  .input-box {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    max-width: 300px;
+  }
+
+  .input-box input {
+    padding: 0 85px 0 12px;
+  }
+
+  #itemsCount {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .input-box {
+    max-width: 260px;
+  }
+}
